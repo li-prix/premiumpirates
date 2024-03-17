@@ -11,7 +11,7 @@ function Navbar() {
 
   const [color, setColor] = useState(false);
   const changecolor = () => {
-    if (window.scrollY >= 90) {
+    if (window.scrollY >= 300) {
       setColor(true);
     } else {
       setColor(false);
@@ -28,16 +28,16 @@ function Navbar() {
   ];
 
   return (
-    <div className="z-10 w-full absolute">
+    <div className="z-10 w-full absolute mt-5">
       <div
         className={
           color
-            ? "bg-black flex fixed top-0 justify-between items-center h-18 w-full mx-auto px-4 text-white"
-            : "bg-transparent flex fixed top-0 justify-between items-center h-18 w-full mx-auto px-4 text-white"
+            ? "bg-black flex fixed top-0 justify-between items-center w-full mx-auto py-2 px-4 text-white"
+            : "bg-transparent flex fixed top-3 justify-between items-center w-full mx-auto px-4 text-white"
         }
       >
-        <div className="ms-3">
-          <h1 className="text-xl md:text-2xl font-bold text-white">PIRATES</h1>
+        <div className="md:ms-3">
+          <h1 className="text-2xl md:text-2xl font-bold text-white">PIRATES</h1>
         </div>
 
         {/* Desktop Navigation */}
@@ -50,7 +50,7 @@ function Navbar() {
         </ul>
         {/* Mobile Navigation */}
         <div onClick={handleNav} className="block md:hidden">
-          {nav ? <FaWindowClose /> : <GiHamburgerMenu />}
+          {nav ? <FaWindowClose size={26} /> : <GiHamburgerMenu size={26} />}
         </div>
         {/* Mobile Navigation Menu*/}
         <ul
@@ -60,10 +60,17 @@ function Navbar() {
               : "ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%]"
           }
         >
-          <h1 className="w-full text-3xl font-bold text-white m-4">PIRATE</h1>
+          <h1 className="w-full text-3xl font-bold text-white ms-4 my-3 mb-16">
+            PIRATE
+          </h1>
           {/* Mobile Navigation Items*/}
           {navItems.map((item) => (
-            <li key={item.id}>{item.text}</li>
+            <li
+              key={item.id}
+              className="ms-4 my-12 mt-4 justify-between text-lg"
+            >
+              {item.text}
+            </li>
           ))}
         </ul>
       </div>

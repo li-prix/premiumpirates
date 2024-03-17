@@ -1,4 +1,5 @@
 import { Parallax, ParallaxBanner } from "react-scroll-parallax";
+import { GiPirateFlag } from "react-icons/gi";
 import stocks from "../assets/stocks.jpg";
 
 function Concept() {
@@ -6,16 +7,21 @@ function Concept() {
     <>
       <div>
         <div className="flex justify-center">
-          <h1 className="text-2xl font-medium text-center mt-5">
-            OUR SERVICES
+          <GiPirateFlag size={30} className="mt-6 me-3" />
+          <h1 className="text-2xl md:text-4xl font-medium text-center mt-5">
+            WHAT WE DO
           </h1>
+          <GiPirateFlag size={30} className="mt-6 ms-3" />
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-2 p-8 mb-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-y-[4rem] md:gap-4 p-8 mb-8">
         <div>
-          <div className="flex flex-col items-center shadow-md w-3/4 mx-auto">
+          <div
+            className="flex flex-col items-center shadow-lg w-4/5
+           mx-auto"
+          >
             <div className="bg-black p-8 w-1/6 mb-4" />
-            <p className="w-3/4 text-center">
+            <p className="text-center p-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a
               lacus libero. Suspendisse euismod nisl rutrum nulla sodales, id
               dictum est blandit. Mauris a magna vel ipsum cursus egestas.
@@ -26,9 +32,9 @@ function Concept() {
           </div>
         </div>
         <div>
-          <div className="flex flex-col items-center shadow-md w-3/4 mx-auto">
+          <div className="flex flex-col items-center shadow-md w-4/5 mx-auto">
             <div className="bg-black p-8 w-1/6 mb-4" />
-            <p className="w-3/4 text-center">
+            <p className="text-center p-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a
               lacus libero. Suspendisse euismod nisl rutrum nulla sodales, id
               dictum est blandit. Mauris a magna vel ipsum cursus egestas.
@@ -39,9 +45,9 @@ function Concept() {
           </div>
         </div>
         <div>
-          <div className="flex flex-col items-center shadow-md w-3/4 mx-auto">
+          <div className="flex flex-col items-center shadow-md w-4/5 md:w-3/4 mx-auto">
             <div className="bg-black p-8 w-1/6 mb-4" />
-            <p className="w-3/4 text-center">
+            <p className="text-center p-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a
               lacus libero. Suspendisse euismod nisl rutrum nulla sodales, id
               dictum est blandit. Mauris a magna vel ipsum cursus egestas.

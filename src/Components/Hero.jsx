@@ -5,11 +5,11 @@ function Hero() {
     <>
       <ParallaxBanner
         layers={[{ image: "src/assets/treasuremap1.jpg", speed: -18 }]}
-        className="aspect-[2/1] h-[90vh]"
+        className="aspect-[2/1] h-[95vh]"
       >
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-justify w-4/5 md:w-1/2">
-            <h1 className="text-3xl md:text-5xl font-medium text-center text-white mb-5">
+            <h1 className="text-3xl md:text-5xl font-medium text-center text-white mb-8">
               Inovating Options Trading
             </h1>
             <p className="text-white text-center text-sm md:text-lg">
@@ -18,8 +18,8 @@ function Hero() {
               dictum est blandit. Mauris a magna vel ipsum cursus egestas.
               Suspendisse faucibus consequat cursus.
             </p>
-            <div className="flex justify-center">
-              <button className="bg-white text-black text-sm  py-3 px-5 mt-12 font-medium hover:bg-gray-200 ease-in-out duration-300">
+            <div className="flex justify-center mt-8">
+              <button className="bg-white text-black text-sm  py-4 px-5 font-medium hover:bg-slate-700 hover:text-white ease-in-out duration-400">
                 CREATE AN ACCOUNT NOW
               </button>
             </div>
