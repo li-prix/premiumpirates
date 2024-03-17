@@ -10,7 +10,7 @@ function Hero() {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-justify w-4/5 md:w-1/2">
             <h1 className="text-3xl md:text-5xl font-medium text-center text-white mb-8">
-              Inovating Options Trading
+              Innovating Options Trading
             </h1>
             <p className="text-white text-center text-sm md:text-lg">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a
